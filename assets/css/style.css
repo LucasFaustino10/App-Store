@@ -1,0 +1,30 @@
+.app { /* Essa é a classe do body*/
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid; /*Diz ao navegador que estamos no formato grid*/
+    grid-template-areas: /*Define as áreas do grid*/
+        "Cabecalho"
+        "Conteudo"
+        "Rodape";
+    grid-template-columns: auto; /*utilizamos auto por somente haver uma coluna*/
+    grid-template-rows: 50px auto auto; /*Respeita a ordem das areas*/
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    grid-area: Cabecalho;
+    padding: 0 2rem;
+}
+.conteudo {
+    grid-area: Conteudo;
+    padding: 0 2rem;
+}
+
+.rodape {
+    grid-area: Rodape;
+    background: #fdfdfd;
+    color: #333333;
+    padding: 1 rem;
+    text-align: center;
+}
